@@ -1,0 +1,13 @@
+{
+    "clangd.arguments": [
+        "-j=8",
+        "--enable-config",
+        "--background-index",
+        "--completion-style=detailed",
+        "--header-insertion=never",
+        "--log=verbose",
+        "--clang-tidy",
+        "--compile-commands-dir=.",
+        "--fallback-style=none"
+    ]
+}
