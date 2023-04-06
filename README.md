@@ -34,12 +34,12 @@ To link to your program manually (without an automate build system as CMake), us
 
 ### Static
 
-    ```bash
-    g++ -std=c++11 main.cpp -I../include -L../lib -o main -lonoff_controller
-    ```
+```bash
+g++ -std=c++11 main.cpp -I../include -L../lib -o main -lonoff_controller
+```
 
 ### Shared
 
-    ```bash
-    g++ -std=c++11 main.cpp -I../include -L../lib -Wl,-rpath=../lib -o main -lonoff_controller
-    ```
+```bash
+g++ -std=c++11 main.cpp -I../include -L../lib -Wl,-rpath=../lib -o main -lonoff_controller
+```
