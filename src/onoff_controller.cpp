@@ -1,7 +1,7 @@
 #include "onoff_controller.h"
 
 OnOffController::OnOffController(const OnOffInput &input):
-        OnOffController(input.m_goal, input.m_output) {
+        OnOffController(input.goal, input.output) {
 }
 
 OnOffController::OnOffController(float min, float max):
@@ -16,8 +16,8 @@ float OnOffController::Update(float goal, float output) {
 float OnOffController::Update(OnOffInput input) {
     float direction = -1.0f;
 
-    float goal = input.m_goal;
-    float plantOutput = input.m_output;
+    float goal = input.goal;
+    float plantOutput = input.output;
 
     float err = direction * (goal - plantOutput);
 

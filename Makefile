@@ -1,10 +1,10 @@
 CXX = g++
-CXXFLAGS = -Wall -Werror -std=c++11
+CXXFLAGS = -Wall -Werror -Wno-padded -std=c++11
 INCLUDES = -I./include
 SRCDIR = src
 OBJDIR = obj
 LIBDIR = lib
-LIBNAME = onoff_controller
+LIBNAME = controllers
 SOURCES = $(wildcard $(SRCDIR)/*.cpp)
 OBJECTS = $(patsubst $(SRCDIR)/%.cpp,$(OBJDIR)/%.o,$(SOURCES))
 

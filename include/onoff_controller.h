@@ -4,8 +4,8 @@
 #include "controller.h"
 
 struct OnOffInput {
-    float m_goal;
-    float m_output;
+    float goal;
+    float output;
 };
 
 class OnOffController: public Controller<float, OnOffInput> {
